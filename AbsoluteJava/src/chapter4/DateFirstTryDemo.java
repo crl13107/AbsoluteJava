@@ -6,11 +6,14 @@ public class DateFirstTryDemo {
 		DateFirstTry date1, date2;
 		date1 = new DateFirstTry();
 		date2 = new DateFirstTry();
-		date1.month = "December";
-		date1.day = 31;
-		date1.year = 1995;
+		date1.setMonth("December");
+		date1.setDay(31);
+		date1.setYear(1995);
 		System.out.print("date1: ");
 		date1.writeOutput();
+		date1.setDate(1000);
+		date1.writeOutput();
+		
 		date2.isItNewYears();
 
 		date2.makeItNewYears();
