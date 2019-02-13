@@ -84,9 +84,31 @@ public class StatCallingClasses {
 		// TODO PAGE 282
 		System.out.println(
 				"There is no no arugment constructor for wrapper classes as it would make no sense to have a wrapper object that isn't assigned to a value!");
+
+	}
+
+	public static void classInvariant() {
+		System.out.println("A statment that is always true for every object of the class is a class invariant.");
+		System.out.println("A class invariant can ehlp to define a class in a consistent and organized way.");
+		System.out.println(
+				"You can compare numbers when you construct the object to make sure certain conditions are met.");
+		System.out
+				.println("Null can be used for things like if a person is dead, it says deathdate is null, or false.");
+
+	}
+
+	public static void copyConstructor() {
+		System.out.println("A copy constructor is a constructor with a single argument of the same type as the class.");
+		System.out.println("It should create a new object, but with the same values as the other object.");
+		System.out.println("One should isntead use clone insteaed of copy constructors.. see chapter 8/13.");
+		System.out.println("Using classes as arguments...~315");
+	}
+
+	public static void mutableAndImmutableClasses() {
+		System.out.println("strings are immutable in java.");
+		System.out.println("Deep copies don't share refrences while shallow copies do (shallow are unsafe).");
+		System.out.println("Never return a refrence to a private instance variable as it ruins the concept of it.");
 		
 	}
-	
-	
 
 }
