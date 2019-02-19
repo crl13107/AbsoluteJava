@@ -2,25 +2,7 @@ package chapter7_Inheritance;
 
 public class Alien {
 
-	public static void main(String[] args) {
-		ABomberAlien a = new ABomberAlien();
-		AMonsterAlien b = new AMonsterAlien();
-		AMarshmellowAlien c = new AMarshmellowAlien();
-
-		// Alien[] aliens = new Alien[3];
-		Alien[] aliens = { a, b, c };
-
-		for (int i = 0; i < aliens.length; i++) {
-			aliens[i].printStats();
-		}
-		alienFight(aliens[2], aliens[1]);
-		alienFight(aliens[0], aliens[2]);
-		alienFight(aliens[0], aliens[1]);
-
-		for (int i = 0; i < aliens.length; i++) {
-			aliens[i].printStats();
-		}
-	}
+	
 
 	private int damage;
 	private int health;
@@ -66,7 +48,7 @@ public class Alien {
 
 	}
 
-	private void printStats() {
+	public void printStats() {
 		if (this.getHealth() > 0)
 			System.out.println("Name: " + this.getName() + "| health: " + this.getHealth());
 		else
