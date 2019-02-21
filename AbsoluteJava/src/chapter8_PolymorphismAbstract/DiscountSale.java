@@ -13,13 +13,13 @@ public class DiscountSale extends Sale {
 		super(originalObject);
 		discount = originalObject.discount;
 	}
-	
+
 	public DiscountSale(String theName, double thePrice, double theDiscount) {
 		super(theName, thePrice);
 		setDiscount(theDiscount);
 	}
 
-	public static void announcement() {
+	public void announcement() {
 		System.out.println("This is the discountsale class");
 	}
 
@@ -44,5 +44,8 @@ public class DiscountSale extends Sale {
 	public String toString() {
 		return (getName() + " Price = $" + getPrice() + " Discount = " + discount + "%\n" + "Total cost = $" + bill());
 	}
-	
+
+	public  DiscountSale clone() {
+		return new DiscountSale(this);
+	}
 }

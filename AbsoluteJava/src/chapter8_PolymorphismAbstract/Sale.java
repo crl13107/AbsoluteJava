@@ -24,7 +24,7 @@ public class Sale {
 		price = originalObject.price;
 	}
 
-	public static void announcement() {
+	public  void announcement() {
 		System.out.println("This is the Sale class");
 	}
 
@@ -76,5 +76,9 @@ public class Sale {
 			Sale otherSale = (Sale) otherObject;
 			return (name.equals(otherSale.name) && (price == otherSale.price));
 		}
+	}
+	
+	public Sale clone() {
+		return new Sale(this);
 	}
 }

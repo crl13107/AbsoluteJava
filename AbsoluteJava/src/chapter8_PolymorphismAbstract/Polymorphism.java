@@ -6,5 +6,8 @@ public class Polymorphism extends PolyMethods {
 		polyBasics();
 		polyFinal();
 		lateBindingToString();
+		casting();
+		introToClone();
+		abstractClassMethods();
 	}
 }

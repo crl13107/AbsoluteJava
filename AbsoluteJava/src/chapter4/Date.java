@@ -27,7 +27,7 @@ public class Date {
 	public Date(Date aDate) {
 		if (aDate == null) { // not a real date
 			System.out.println("Fatal Error");
-			System.exit(0);
+			//System.exit(0);
 		}
 
 		month = aDate.month;
