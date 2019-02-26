@@ -25,5 +25,9 @@ public class Basics extends ExceptionMethods {
 		
 		//start 9.2 page 536
 		throwingExceptionsInMethods();
+		exceptionsToCatchOrDeclareRule();
+		eventDrivenProgramming();
+		//start 9.3 page 569
+		moreTechniques();
 	}
 }
