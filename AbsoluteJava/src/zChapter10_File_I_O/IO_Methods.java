@@ -48,7 +48,72 @@ public class IO_Methods {
 	}
 
 	private static void appendingToATextFile() {
+		System.out.println("You have to append to the file if you don't want to reset the contents.");
+		System.out.println("You do this by adding a , true) after you declear the input stream.");
+		System.out.println("The constructor has a boolean equation that is false for no append, true for append.");
+		System.out.println("You can append objects to text files if they have a proper toString() method.");
+	}
+
+	public static void readingFromTextFile() {
+		System.out.println("follow examples.");
+		usingBufferedReader();
+	}
+
+	private static void usingBufferedReader() {
+		System.out.println("skip() method skips the inserted amount of chars");
+		System.out.println("read() read prints out the next char in byte code");
+		System.out.println("char next = (char)(inputStream.read()) to convert it into a char");
+		System.out.println("Buffered reader has no read next numeric type methods.");
+		System.out.println("Instead you have to write your own methods, or convert it using Integer.parstInt,"
+				+ " Double.parseDouble and the stringTokenizer");
+		System.out.println("It uses null to represent there is nothing else in the file.");
+		System.out.println("So you can use while nextline != null, keep printing to print out the entire file.");
+		System.out.println("The method read prints -1, so you can find the end of a text file.");
+	}
+	
+	public static void pathNames() {
+		System.out.println("When you give a file with no directory, is assume the file is in the current directory.");
+		System.out.println("A path name gives the file name and the directory to find the file.");
+		System.out.println("A full path name gives a complete path starting from the root directory.");
+		System.out.println("A relative path name gives the path to the file starting with the current directory your program is in.");
+		System.out.println("C:\\Users\\Colten\\Documents\\School\\absoluteJava.txt");
+		System.out.println("You have to use \\ for java. Most IDe do this by default when you copy and paste.");
+		System.out.println("Java will accept windows and unix format for any computer.");
+		System.out.println("So you may use / for windows computers as well.");
+		nestedConstructorInvocations();
+	}
+
+	private static void nestedConstructorInvocations() {
+		System.out.println("new BufferedReader (new FileReader(\"orignal.txt\"");
+		System.out.println("This gives an object of filereader with very primitive methods.");
+		System.out.println("It then type casts into BufferedReader to give it a richer collections of methods.");
+		System.out.println("java gives system.in, out, and err by default.");
+		System.out.println("err is used for errors. One way to use this is to set up a different file to hold errors.");
+	}
+	
+	public static void fileClass() {
+		System.out.println("File class isn't I/O, but it is so needed that it is in java.io package.");
+		System.out.println("File allows you to use simple methods to check properties of a file");
+		System.out.println("File constructor takes an abstract name as a string argument.");
+		System.out.println("the abstract name can be a direcotry for example. So isDirectory() method will tell you if it is a directory.");
+		System.out.println("The File class is a wrapper class for file names");
+		System.out.println("The constructor creates an object of type file with that name.");
+	}
+	
+	public static void binaryFiles() {
+		System.out.println("Binary files store data int he same format used in the computer's memory to store the value of variables.");
+		System.out.println("No converesion is needed for the computer to handle it, so it is more effecient.");
+		System.out.println("Unlike other byte files, java byte files work across computers and OS.");
+		System.out.println("ObjectInput/Output Stream is the preferred way for byte files.");
+		System.out.println("Both have methods to read and write 1 one byte of data at atime.");
+		System.out.println("It also can automatically convert number/chars into byte code.");
+		System.out.println("This is the best way to write to files and read them if you don't need to acess the file using an editor.");
+		writingToBinaryFiles();
+	}
+
+	private static void writingToBinaryFiles() {
 		
 		
 	}
+
 }
