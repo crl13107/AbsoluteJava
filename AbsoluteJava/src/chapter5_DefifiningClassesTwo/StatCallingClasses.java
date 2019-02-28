@@ -1,4 +1,4 @@
-package chapter5;
+package chapter5_DefifiningClassesTwo;
 
 import java.lang.Math;
 

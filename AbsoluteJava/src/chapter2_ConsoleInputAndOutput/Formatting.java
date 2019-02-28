@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2_ConsoleInputAndOutput;
 
 import java.text.NumberFormat;
 import java.time.chrono.JapaneseChronology;

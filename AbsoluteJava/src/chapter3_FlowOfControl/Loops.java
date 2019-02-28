@@ -1,4 +1,4 @@
-package chapter3;
+package chapter3_FlowOfControl;
 
 public class Loops {
 

@@ -1,4 +1,4 @@
-package chapter2;
+package chapter2_ConsoleInputAndOutput;
 
 import java.util.Scanner; //used for input from user
 

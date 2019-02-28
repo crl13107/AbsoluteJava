@@ -1,4 +1,4 @@
-package chapter4;
+package chapter4_DefiningClassOne;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;

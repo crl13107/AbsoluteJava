@@ -1,4 +1,4 @@
-package chapter1;
+package chapter1_IntoToJava;
 
 public class Chapter1 {
 
