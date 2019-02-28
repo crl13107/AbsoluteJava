@@ -30,6 +30,7 @@ public class Inrtoduction {
 		IO_Methods.pathNames();
 		IO_Methods.fileClass();
 		IO_Methods.binaryFiles();
-		//page 622 atm
+		IO_Methods.binaryIOObjects();
+		IO_Methods.randomAccessToBinaryFiles();
 	}
 }

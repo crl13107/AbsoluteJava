@@ -1,0 +1,54 @@
+package zChapter10_File_I_O;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class ObjectIODEMO {
+
+	/**
+	 * 
+	 */
+
+	public static void main(String[] args) {
+		try {
+			ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("datafile"));
+
+			SomeClass oneObject = new SomeClass(1, 'A');
+			SomeClass anotherObject = new SomeClass(42, 'Z');
+
+			outputStream.writeObject(oneObject);
+			outputStream.writeObject(anotherObject);
+
+			outputStream.close();
+
+			System.out.println("data sent to file");
+
+		} catch (IOException e) {
+			System.out.println("Problem with file output");
+		}
+		System.out.println("Now let's reopen the file and dispaly the data.");
+
+		try {
+			@SuppressWarnings("resource")
+			ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("datafile"));
+
+			SomeClass readOne = (SomeClass) inputStream.readObject();
+			SomeClass readTwo = (SomeClass) inputStream.readObject();
+
+			System.out.println("The following were read from the file:");
+			System.out.println(readOne);
+			System.out.println(readTwo);
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found");
+		} catch (ClassNotFoundException e) {
+			System.out.println("Class not found");
+		} catch (IOException e) {
+			System.out.println("General problems");
+		}
+		System.out.println("End of program.");
+	}
+}
