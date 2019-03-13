@@ -9,7 +9,6 @@ public class SomeClass implements Serializable {
 	 * 
 	 */
 
-	@SuppressWarnings("unused")
 	private int number;
 	private char letter;
 
