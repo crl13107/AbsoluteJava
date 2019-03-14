@@ -4,5 +4,8 @@ public class UMLBase extends UML_Methods {
 
 	public static void main(String[] args) {
 		uml();
+		patterns();
+		mvc();
+		sortingPatterns();
 	}
 }
