@@ -33,6 +33,39 @@ public class RecursionMethods {
 			System.out.print(arr[i] + " ");
 		// searches for the key, then prints the location it is at
 		System.out.println("The key value " + key + " is at index: " + binarySearch(arr, arr[0], arr.length, key));
+		System.out.println("The key value " + key + " is at index: " + search(arr, arr[0], arr.length, key));
+		System.out.println("Tail recursion - has property that it does nothing after recusrive call "
+				+ "except return method's value.");
+		System.out.println("Most tail methods will be converted to iterative methods by the JVM.");
+	}
+
+	public static void findingAFile() {
+		
+	}
+
+	public static int search(int[] arr, int lowEnd, int highEnd, int key) {
+		int first = lowEnd;
+		int last = highEnd;
+		int mid;
+
+		boolean found = false;
+		int result = 0;
+
+		while ((first <= last) && !(found)) {
+			mid = (first + last) / 2;
+
+			if (key == arr[mid]) {
+				found = true;
+				result = mid;
+			} else if (key < arr[mid]) {
+				last = mid - 1;
+			} else if (key > arr[mid]) {
+				first = mid + 1;
+			}
+		}
+		if (first > last)
+			result = 1;
+		return result;
 	}
 
 	private static int binarySearch(int[] arr, int first, int last, int key) {
