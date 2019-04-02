@@ -1,6 +1,6 @@
 package chapter8_PolymorphismAbstract;
 
-import chapter4.Date;
+import chapter4_DefiningClassOne.Date;
 
 public abstract class Employee {
 	@SuppressWarnings("unused")
