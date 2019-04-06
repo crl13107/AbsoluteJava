@@ -46,6 +46,7 @@ public class LinkedList1 {
 			itemAtPostion = position.getItem();
 			if (itemAtPostion.equals(target))
 				return position;
+			position = position.getLink();
 		}
 		return null;
 
