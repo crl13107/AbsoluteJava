@@ -15,7 +15,12 @@ public class Methods {
 		System.out.println("You have to be sure to update position after each iteration");
 	}
 	
-	public static void pitFallsWithGenericLinkedList() {
+
+	public static void nodeVgenerics() {
+		System.out.println("Node and Node<T> are different, but the code will sometimes run fine");
+		System.out.println("Linked lists often have 2 equal methods "
+				+ "one for order mattering and one for when order doesn't matter.");
+		System.out.println("Both are correct and useful, but usually order doesn't matter is used.");
 		
 	}
 	
