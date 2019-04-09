@@ -77,4 +77,26 @@ public class LinkedList2 {
 	public void clear() {
 		head = null;
 	}
+
+	public boolean equals(Object otherObject) {
+		if (otherObject == null)
+			return false;
+		else if (getClass() != otherObject.getClass())
+			return false;
+		else {
+			LinkedList2 otherList = (LinkedList2) otherObject;
+			if (size() != otherList.size())
+				return false;
+			Node position = head;
+			Node otherPosition = otherList.head;
+			while (position != null) {
+				if ((!(position.item.equals(otherPosition.item))))
+					return false;
+				position = position.link;
+				otherPosition = otherPosition.link;
+			}
+			return true; // a mismatch was not found throughout the entire thing
+
+		}
+	}
 }

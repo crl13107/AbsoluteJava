@@ -9,6 +9,13 @@ public class Methods {
 		System.out.println("Linked link finds last node by setting last link = null.");
 		System.out.println("Java garabge collector will get rid on unused nodes by itself.");
 	}
-	
-	
+
+	public static void nodeVgenerics() {
+		System.out.println("Node and Node<T> are different, but the code will sometimes run fine");
+		System.out.println("Linked lists often have 2 equal methods "
+				+ "one for order mattering and one for when order doesn't matter.");
+		System.out.println("Both are correct and useful, but usually order doesn't matter is used.");
+		
+	}
+
 }
