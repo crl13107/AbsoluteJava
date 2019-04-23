@@ -3,7 +3,7 @@ package section1_JavaLinkedLists;
 public class LinkedList3<T> {
 
 	@SuppressWarnings("hiding")
-	private class Node<T> {
+		class Node<T> {
 		private T data;
 		private Node<T> link;
 

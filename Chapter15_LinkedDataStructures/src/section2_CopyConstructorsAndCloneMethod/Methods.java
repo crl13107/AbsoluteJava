@@ -7,7 +7,7 @@ public class Methods {
 		System.out.println("This chapter will explain why java clone is made the way it is.");
 		System.out.println("It will also touch on what makes a good and bad clone method.");
 	}
-	
+
 	public static void simpleCopyAndClone() {
 		System.out.println("When copying a linked list, you add the clones to the end up of list.");
 		System.out.println("Clone is protected in java for security reasons. With class calling it.");
@@ -18,7 +18,9 @@ public class Methods {
 		System.out.println("1) the class implements the cloneable interface");
 		System.out.println("2) the class hada public clone method");
 		System.out.println("3) clone method for the class makes a deep copy (offical way)");
-		//step 3 not checked by the compiler
+		// step 3 not checked by the compiler
 		System.out.println();
+		System.out.println("There is the right way, wrong way and the \"java\" way to write clone methods");
 	}
+	
 }
