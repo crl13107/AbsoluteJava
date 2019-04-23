@@ -23,6 +23,7 @@ public class LinkedList2 {
 	public LinkedList2() {
 		head = null;
 	}
+	
 
 	public void addToStart(String itemName) {
 		head = new Node(itemName, head);
