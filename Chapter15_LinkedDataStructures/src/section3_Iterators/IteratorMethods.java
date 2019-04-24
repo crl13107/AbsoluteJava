@@ -22,6 +22,10 @@ public class IteratorMethods {
 
 	public static void deletingNodes() {
 		System.out.println("Generally you use an iterator to add and delete nodes.");
-		System.out.println("");
+		System.out.println("when no refrences apply to an object, in most languages you must manually delete them");
+		System.out.println("This is done for you in java, this process is called grabage collecting.");
+		System.out.println("To delete, head you said set head = head.link.");
+		System.out.println("When adding you create a temp new node.");
+		System.out.println("Then you set the previous node link = temp and temp to the next node.");
 	}
 }
