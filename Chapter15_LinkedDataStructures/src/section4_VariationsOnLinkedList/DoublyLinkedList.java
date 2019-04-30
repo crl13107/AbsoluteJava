@@ -8,14 +8,12 @@ public class DoublyLinkedList {
 		private TwoWayNode previous;
 		private TwoWayNode next;
 
-		@SuppressWarnings("unused")
 		public TwoWayNode() {
 			item = null;
 			next = null;
 			previous = null;
 		}
 
-		@SuppressWarnings("unused")
 		public TwoWayNode(String newItem, TwoWayNode previousNode, TwoWayNode nextNode) {
 			item = newItem;
 			previous = previousNode;
