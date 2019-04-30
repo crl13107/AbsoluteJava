@@ -21,6 +21,7 @@ public class VariationMethods {
 	}
 
 	public static void timeComplexity() {
-		
+		System.out.println("Big O notation is the estimate on run time, or upper-bound estimate");
+		System.out.println("Linear = N / Quadratic less than N^2 / Expo: over N^2");
 	}
 }
